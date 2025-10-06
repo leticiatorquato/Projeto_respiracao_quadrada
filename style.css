@@ -65,12 +65,12 @@ box-shadow: 0 0 1em rgba(47, 65, 86, 1);
 
 #caixa-temporizador {
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 0.7em;
+    padding: 0.9em;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 40em;
+    width: 35em;
     border-radius: 4em;
     box-shadow: 0 0 1em rgba(47, 65, 86, 1);
     margin-top: 0.8em;

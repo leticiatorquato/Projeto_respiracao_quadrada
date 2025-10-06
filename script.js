@@ -45,19 +45,12 @@ function iniciar() {
 
 function pausar() {
     clearInterval(intervalo);
-    intervalo = null;
 }
 
 function resetar(){
     clearInterval(intervalo);
-    intervalo= null;
-    temporestante= undefined;
+    temporestante= tempototal;
 
-    minuto= parseInt(document.getElementById('input_minuto').value) || 0;
-    segundo= parseInt(document.getElementById('input_segundo').value) || 0;
-    tempototal= minuto*60+segundo;
-
-    document.getElementById('temporizador').textContent= formatartempo(total);
+    document.getElementById('temporizador').textContent= formatartempo(temporestante);  
 }
-    
 
