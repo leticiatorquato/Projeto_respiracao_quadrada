@@ -61,18 +61,26 @@ function resetar() {
   clearInterval(intervalo);
   intervalo = null;
 
-  temporestante = tempototal;
+  
 
+  minuto= parseInt(document.getElementById("input_minuto").value) || 0;
+  segundo= parseInt(document.getElementById("input_segundo").value) || 0;
+  tempototal=minuto*60+segundo;
+  temporestante=tempototal;
   document.getElementById('temporizador').textContent = formatartempo(temporestante);
 
   pulmao.style.animation = 'none';
   borda.style.animation = 'none';
-
-  pulmao.style.animation = 'pulsar 16s infinite';
-  borda.style.animation = 'carregarborda 16s infinite';
   
-  pulmao.style.animationPlayState = 'paused';
-  borda.style.animationPlayState = 'paused';
+  setTimeout(() => {
+    pulmao.style.animation = 'pulsar 16s infinite';
+    borda.style.animation = 'carregarborda 16s infinite';
+    pulmao.style.animationPlayState = 'paused';
+    borda.style.animationPlayState = 'paused';
+    }, 10);
+
+   temporestante= undefined;
+
 }
     
 
