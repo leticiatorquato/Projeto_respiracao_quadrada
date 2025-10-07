@@ -1,4 +1,7 @@
 const musica= document.getElementById("musica_ambiente");
+const pulmao= document.getElementById("pulmao");    
+const borda= document.getElementById("borda");
+
 
 document.addEventListener("click", function() {
     musica.volume=0.2;
@@ -29,6 +32,9 @@ function iniciar() {
             
         }
 
+        pulmao.style.animationPlayState = 'running';
+        borda.style.animationPlayState = 'running';
+
         intervalo= setInterval(() => {
             document.getElementById('temporizador').textContent= formatartempo(temporestante);
              temporestante--;
@@ -36,8 +42,9 @@ function iniciar() {
              if(temporestante<=0) {
                 clearInterval(intervalo);
                 intervalo=null;
+                pulmao.style.animationPlayState = 'paused';
+                borda.style.animationPlayState = 'paused';
                 document.getElementById('temporizador').textContent= 'Ciclo encerrado 😮‍💨🍃';
-                
              }
         }, 1000);
     }
@@ -45,12 +52,29 @@ function iniciar() {
 
 function pausar() {
     clearInterval(intervalo);
+
+    pulmao.style.animationPlayState = 'paused';
+    borda.style.animationPlayState = 'paused';
 }
 
-function resetar(){
-    clearInterval(intervalo);
-    temporestante= tempototal;
+function resetar() {
+  clearInterval(intervalo);
+  intervalo = null;
 
-    document.getElementById('temporizador').textContent= formatartempo(temporestante);  
+  temporestante = tempototal;
+
+  document.getElementById('temporizador').textContent = formatartempo(temporestante);
+
+  pulmao.style.animation = 'none';
+  borda.style.animation = 'none';
+
+  pulmao.style.animation = 'pulsar 16s infinite';
+  borda.style.animation = 'carregarborda 16s infinite';
+  
+  pulmao.style.animationPlayState = 'paused';
+  borda.style.animationPlayState = 'paused';
 }
+    
+
+    
 

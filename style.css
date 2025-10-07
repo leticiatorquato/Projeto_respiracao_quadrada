@@ -32,6 +32,7 @@ main{
 #pulmao{
     transform-origin: center;
     animation: pulsar 16s infinite;
+    animation-play-state: paused;
 }
 
 #quadrado{
@@ -40,6 +41,7 @@ box-shadow: 0 0 1em rgba(47, 65, 86, 1);
 
 #borda {
     animation: carregarborda 16s infinite;
+    animation-play-state: paused;
 }
 
 @keyframes pulsar {
