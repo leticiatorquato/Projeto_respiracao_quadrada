@@ -28,7 +28,8 @@ main{
 #explicacao{
     width: 68em;
     position: sticky;
-    margin: 0.3em;
+    margin-top: 0.8em;
+
 }
 
 /*aplicação da animação de pulsação no pulmão*/
@@ -84,7 +85,7 @@ box-shadow: 0 0 1em rgba(47, 65, 86, 1);
     width: 35em;
     border-radius: 4em;
     box-shadow: 0 0 1em rgba(47, 65, 86, 1);
-    margin-top: 0.3em;
+    margin-top: 1em;
 }
 
 /*estilização do texto da caixa do temporizador*/
