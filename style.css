@@ -134,5 +134,11 @@ box-shadow: 0 0 1em rgba(47, 65, 86, 1);
     font-size: 2.5em;
 }
 
+header {
+    font-size: 0.9em;
+    margin: 1.5em;
+    text-align: center;
+}
+
 
 
