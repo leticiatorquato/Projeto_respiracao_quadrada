@@ -1,1 +1,2 @@
 # Projeto_respiracao_quadrada
+Esse projeto é um site de respiração quadrada, uma técnica de relaxamento e controle da ansiedade que consiste em dividir a respiração em 4 partes iguais: inspirar, prender a respiração com os pulmões cheios, expirar e prender a respiração com os pulmões vazios, cada um em 4 segundos. Ele contém um temporizador no qual o usuário pode definir por quanto tempo deseja realizar a técnica e na parte central tem uma animação para auxiliá-lo durante a realização da respiração quadrada. Esse site foi desenvolvido com HTML, JavaSript e CSS.
